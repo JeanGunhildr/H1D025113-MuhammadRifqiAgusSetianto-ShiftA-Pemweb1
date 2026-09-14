@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <style>
+        form {
+            display: flex; 
+            flex-direction: column; 
+            gap: 4px; 
+            width: 200px;
+        }
+        .formInput {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            gap: 10px;
+            width: 400px;
+        }
+        .formInput input, select, textarea {
+            width: 100%;
+        }
+        textarea {
+            height: 100px;
+        }
+        form button {
+            width: fit-content;
+        }
+        .formInput .wrapper {
+            width: 200px;
+            /* background-color: aqua; */
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="nama">Nama</label>
+            </div>
+            <input type="text" value="Romi" name="nama" id="nama">
+        </div>
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="email">Email</label>
+            </div>
+            <input type="text" value="romi@gmail.com" name="email" id="email">
+        </div>
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="username">Username</label>
+            </div>
+            <input type="text" value="romi" name="username" id="username">
+        </div>
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="password">Password</label>
+            </div>
+            <input type="password" value="romi" name="password" id="password">
+        </div>
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="jenis-kelamin">Jenis Kelamin</label>
+            </div>
+            <select name="jenis-kelamin" id="jenis-kelamin">
+                <option selected value="laki-laki">Laki Laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+        </div>
+        <div class="formInput">
+            <div class="wrapper">
+                <label for="alamat">Alamat</label>
+            </div>
+            <textarea placeholder="Bogor" name="alamat" id="alamat"></textarea>
+        </div>
+        <button type="submit">Simpan</button>
+    </form>
+</body>
+</html>
