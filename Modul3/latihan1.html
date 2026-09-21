@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+    <style>
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .box {
+            border: 1px solid black;
+        }
+
+
+        #top {
+            height: 20%;
+            background-color: beige;
+        }
+
+        #bottom {
+            height: 10%;
+            background-color: azure;
+        }
+
+        #middle {
+            flex: 1;
+            background: url('gambar.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box" id="top"></div>
+        <div class="box" id="middle"></div>
+        <div class="box" id="bottom"></div>
+    </div>
+</body>
+</html>
